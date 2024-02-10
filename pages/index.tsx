@@ -61,7 +61,7 @@ const Home: NextPage = () => {
                 </Link>
                 <Link
                   className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
+                  href="https://github.com/amirhosseinmpr/NFTMarket"
                   target="_blank"
                 >
                   GitHub
