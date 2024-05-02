@@ -2,13 +2,18 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import Head from 'next/head';
 /**
  * Landing page with a simple gradient background and a hero asset.
  * Free to customize as you see fit.
  */
 const Home: NextPage = () => {
   return (
+    <>
+      <Head>
+<script data-ad-client="6481894a0fe00fac4198f25c96514aea" async src="//www.topcreativeformat.com/6481894a0fe00fac4198f25c96514aea/invoke.js"></script>
+</Head>
+
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.hero}>
@@ -72,6 +77,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </div>
+          </>
   );
 };
 
