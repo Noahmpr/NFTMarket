@@ -1,35 +1,35 @@
+
 import type { NextPage } from "next";
 import Link from "next/link";
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react';
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Head from 'next/head';
-/**
- * Landing page with a simple gradient background and a hero asset.
- * Free to customize as you see fit.
- */
+
+
 const Home: NextPage = () => {
-	 const banner = useRef()
+const banner = useRef(null);
 
-    const atOptions = {
-        key:'6481894a0fe00fac4198f25c96514aea',
-        format: 'iframe',
-        height: 50,
-        width: 320,
-        params: {},
-    }
-    useEffect(() => {
-    if (banner.current && !banner.current.firstChild) {
-        const conf = document.createElement('script')
-        const script = document.createElement('script')
-        script.type = 'text/javascript'
-        script.src = `//www.topcreativeformat.com/${atOptions.key}/invoke.js`
-        conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`
+const atOptions = {
+key: '6481894a0fe00fac4198f25c96514aea',
+format: 'iframe',
+height: 50,
+width: 320,
+params: {},
+};
+	
+ useEffect(() => {
+if (banner.current && !banner.current.firstChild) {
+const conf = document.createElement('script');
+const script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = `//www.topcreativeformat.com/${atOptions.key}/invoke.js`;
+conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
 
-        banner.current.append(conf)
-        banner.current.append(script)
-    }
-}, [banner])
+banner.current.appendChild(conf);
+banner.current.appendChild(script);
+}
+}, [banner]);
 	
   return (
     <>
