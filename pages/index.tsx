@@ -19,7 +19,7 @@ params: {},
 };
 	
  useEffect(() => {
-if (banner.current && !banner.current.firstChild) {
+
 const conf = document.createElement('script');
 const script = document.createElement('script');
 script.type = 'text/javascript';
@@ -28,7 +28,6 @@ conf.innerHTML = `atOptions = ${JSON.stringify(atOptions)}`;
 
 banner.current.appendChild(conf);
 banner.current.appendChild(script);
-}
 }, [banner]);
 	
   return (
