@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 
 const Home: NextPage = () => {
-const banner = useRef(null);
+const banner = useRef<HTMLDivElement>(null);
 
 const atOptions = {
 key: '6481894a0fe00fac4198f25c96514aea',
