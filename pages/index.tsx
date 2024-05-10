@@ -6,9 +6,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Head from 'next/head';
 
-
 const Home: NextPage = () => {
-const banner = useRef<HTMLDivElement>(null);
+const banner = useRef();
 
 const atOptions = {
 key: '6481894a0fe00fac4198f25c96514aea',
