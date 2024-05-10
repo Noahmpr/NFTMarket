@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import Head from 'next/head';
 /**
  * Landing page with a simple gradient background and a hero asset.
  * Free to customize as you see fit.
@@ -10,7 +10,20 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   return (
     <>
-
+<Head>
+{/* Yektanet Analytics Script */}
+<script dangerouslySetInnerHTML={{
+__html: `
+!function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){
+e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],
+r=new Date,c="https://cdn.yektanet.com/superscript/NsZLaGtJ/native-nft-market-three.vercel.app-37687/yn_pub.js?v="
++r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),
+s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);
+var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l);
+}(window,document,"yektanet");
+`
+}} />
+</Head>
 
     <div className={styles.container}>
       <div className={styles.content}>
@@ -75,6 +88,7 @@ const Home: NextPage = () => {
         </div>
       </div>
     </div>
+      <div id="pos-article-display-96542"></div>
           </>
   );
 };
