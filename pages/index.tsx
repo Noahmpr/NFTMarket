@@ -12,17 +12,7 @@ const Home: NextPage = () => {
     <>
 <Head>
 {/* Yektanet Analytics Script */}
-<script dangerouslySetInnerHTML={{
-__html: `
-!function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){
-e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],
-r=new Date,c="https://cdn.yektanet.com/superscript/NsZLaGtJ/native-nft-market-three.vercel.app-37687/yn_pub.js?v="
-+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),
-s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);
-var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l);
-}(window,document,"yektanet");
-`
-}} />
+<script id="chatbot-widget-script" type="text/javascript" src="https://dev.hamhoush.ir/chatbot-widget.js" data-id="67443037c140b189e09afd25" data-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RAZ21haWwuY29tIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm5hbWVpZCI6IjcwM2MxNmI1LWIzY2UtNDMwNC1iZTVlLTNkYzIwOTM2ZjQ4NSIsInRlbmFudE5hbWUiOiJkZXZlbG9wIiwidGVuYW50SWQiOiIxIiwicm9sZSI6IlVTRVIiLCJuYmYiOjE3MzQ0NDIzOTMsImV4cCI6MTczNTA0NzE5MywiaWF0IjoxNzM0NDQyMzkzLCJpc3MiOiJlbnRlcnByaXNlLWlkZW50aXR5IiwiYXVkIjoiQWRtaW5Qb3J0YWwifQ.3bnxRqMZsy2ArA8T7bjg9n8uGzxA6RUqJnpVW4mElPM"></script>
 
 </Head>
 
