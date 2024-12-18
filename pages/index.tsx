@@ -8,22 +8,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <script
-          id="chatbot-widget-script"
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                var s = document.createElement('script');
-                s.src = "https://dev.hamhoush.ir/chatbot-widget.js";
-                s.type = "text/javascript";
-                s.dataset.id = "67443037c140b189e09afd25";
-                s.dataset.token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6InRlc3RAZ21haWwuY29tIiwiZW1haWwiOiJ0ZXN0QGdtYWlsLmNvbSIsIm5hbWVpZCI6IjcwM2MxNmI1LWIzY2UtNDMwNC1iZTVlLTNkYzIwOTM2ZjQ4NSIsInRlbmFudE5hbWUiOiJkZXZlbG9wIiwidGVuYW50SWQiOiIxIiwicm9sZSI6IlVTRVIiLCJuYmYiOjE3MzQ0NDIzOTMsImV4cCI6MTczNTA0NzE5MywiaWF0IjoxNzM0NDQyMzkzLCJpc3MiOiJlbnRlcnByaXNlLWlkZW50aXR5IiwiYXVkIjoiQWRtaW5Qb3J0YWwifQ.3bnxRqMZsy2ArA8T7bjg9n8uGzxA6RUqJnpVW4mElPM";
-                document.head.appendChild(s);
-              })();
-            `,
-          }}
-        />
+       
       </Head>
 
       <div className={styles.container}>
